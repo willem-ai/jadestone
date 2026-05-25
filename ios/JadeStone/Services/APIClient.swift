@@ -3,12 +3,8 @@ import Foundation
 actor APIClient {
     static let shared = APIClient()
 
-    #if DEBUG
-    // For simulator, use localhost; for real device, use your Mac's IP
-    private let baseURL = "http://localhost:8000"
-    #else
-    private let baseURL = "https://your-server.com"  // TODO: configure
-    #endif
+    // 阿里云公网服务器: 47.239.27.170:8000
+    private let baseURL = "http://47.239.27.170:8000"
 
     private let session: URLSession = {
         let config = URLSessionConfiguration.default
