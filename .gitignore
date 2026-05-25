@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# Backend
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/model_cache/
+backend/data/case_features.npy
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+ios/*.xcodeproj/
+ios/*.xcworkspace/
+
+# IDE
+.vscode/
+.idea/
